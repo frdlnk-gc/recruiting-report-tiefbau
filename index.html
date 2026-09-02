@@ -1,0 +1,1277 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="robots" content="noindex">
+  <title>Recruiting-Report 2026 – Kostenlos für Straßen- &amp; Tiefbau-Betriebe | GreyCareers</title>
+  <meta name="description" content="Der kostenlose Recruiting-Report 2026 für Straßen- und Tiefbau-Betriebe: Welche Kanäle wirklich Polier, Bauleiter und Tiefbauer bringen, was eine Einstellung kostet – 32 Seiten mit Benchmarks und Vorlagen.">
+  <meta property="og:title" content="Recruiting-Report 2026 – Kostenlos für Straßen- &amp; Tiefbau-Betriebe">
+  <meta property="og:description" content="32 Seiten Benchmarks: Welche Kanäle 2026 wirklich Bewerber bringen und was eine Einstellung pro Kanal kostet.">
+  <meta property="og:type" content="website">
+  <link rel="icon" type="image/png" href="assets/favicon-32.png">
+
+  <link rel="preload" href="assets/fonts/fraunces-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
+
+  <style>
+    /* ===== Fonts (self-hosted, latin subsets) ===== */
+    @font-face{font-family:'Fraunces';src:url('assets/fonts/fraunces-var.woff2') format('woff2');font-weight:600 700;font-style:normal;font-display:swap;}
+    @font-face{font-family:'Fraunces';src:url('assets/fonts/fraunces-italic.woff2') format('woff2');font-weight:600;font-style:italic;font-display:swap;}
+    @font-face{font-family:'Inter';src:url('assets/fonts/inter-var.woff2') format('woff2');font-weight:400 800;font-style:normal;font-display:swap;}
+
+    :root{
+      --bg:#14181C;
+      --bg-2:#1A1F24;
+      --card:#22282E;
+      --ink:#F4F1E8;
+      --ink-dim:rgba(244,241,232,.70);
+      --ink-faint:rgba(244,241,232,.45);
+      --green:#EA580C;
+      --green-deep:#C2410C;
+      --green-bright:#F97316;
+      --mint:#FDBA74;
+      --line:rgba(244,241,232,.10);
+      --q-ink:#14181C;
+      --q-dim:#5B6570;
+      --radius:22px;
+      --shadow:0 24px 60px -18px rgba(0,0,0,.55);
+      --font-serif:'Fraunces',Georgia,serif;
+      --font-sans:'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;
+    }
+    *{margin:0;padding:0;box-sizing:border-box;}
+    html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;}
+    body{font-family:var(--font-sans);background:var(--bg);color:var(--ink);line-height:1.65;font-size:16px;overflow-x:hidden;}
+    img{max-width:100%;display:block;}
+    a{color:inherit;}
+    .container{max-width:1140px;margin:0 auto;padding:0 20px;}
+    .serif{font-family:var(--font-serif);}
+    em.accent{font-family:var(--font-serif);font-style:italic;font-weight:600;color:var(--mint);}
+
+    /* ===== Reveal ===== */
+    .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease;}
+    .reveal.in{opacity:1;transform:none;}
+    @media (prefers-reduced-motion: reduce){
+      .reveal{opacity:1;transform:none;transition:none;}
+      html{scroll-behavior:auto;}
+      .marquee-track{animation:none !important;}
+    }
+
+    /* ===== Topbar ===== */
+    .topbar{position:absolute;top:0;left:0;right:0;z-index:20;padding:14px 0;}
+    .topbar .container{display:flex;align-items:center;justify-content:center;}
+    .topbar img{height:30px;width:auto;}
+    @media(min-width:1024px){.topbar{padding:18px 0;}.topbar img{height:36px;}}
+
+    /* ===== Hero ===== */
+    .hero{position:relative;padding:64px 0 40px;display:flex;align-items:center;}
+    @media(min-width:1024px){.hero{min-height:100svh;}}
+    .hero-bg{position:absolute;inset:0;overflow:hidden;background:
+      radial-gradient(120% 70% at 85% -10%,rgba(249,115,22,.16),transparent 60%),
+      radial-gradient(90% 60% at -10% 40%,rgba(194,65,12,.25),transparent 60%),
+      linear-gradient(175deg,#1C2127 0%,var(--bg) 60%);}
+    .hero-bg picture{display:none;}
+    @media(min-width:768px){
+      .hero-bg picture{display:block;height:100%;}
+      .hero-bg img{width:100%;height:100%;object-fit:cover;object-position:62% 30%;}
+      .hero-bg::after{content:'';position:absolute;inset:0;background:
+        linear-gradient(180deg,rgba(20,24,28,.55) 0%,rgba(20,24,28,.78) 46%,var(--bg) 96%),
+        linear-gradient(100deg,rgba(20,24,28,.62) 0%,rgba(20,24,28,.15) 70%);}
+    }
+    .hero .container{position:relative;z-index:2;display:grid;gap:26px;width:100%;}
+    @media(min-width:1024px){
+      .hero{padding:120px 0 72px;}
+      .hero .container{grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;}
+    }
+
+    .hero-badge{display:inline-flex;align-items:center;gap:9px;border:1px solid rgba(253,186,116,.35);background:rgba(234,88,12,.14);color:#FFEDD5;border-radius:999px;padding:8px 15px;font-size:.8rem;font-weight:600;letter-spacing:.02em;backdrop-filter:blur(4px);}
+    .hero-badge .dot{width:7px;height:7px;border-radius:50%;background:var(--green-bright);box-shadow:0 0 0 0 rgba(249,115,22,.5);animation:pulse 2.2s infinite;}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(249,115,22,.45);}70%{box-shadow:0 0 0 9px rgba(249,115,22,0);}100%{box-shadow:0 0 0 0 rgba(249,115,22,0);}}
+
+    .hero h1{font-family:var(--font-serif);font-weight:600;font-size:clamp(1.95rem,7.4vw,4.1rem);line-height:1.08;letter-spacing:-.015em;margin:14px 0 12px;}
+    .hero h1 .nowrap{white-space:nowrap;}
+    .hero h1 .ital{font-style:italic;color:var(--mint);}
+    .hero-sub{font-size:clamp(.95rem,2.5vw,1.13rem);color:var(--ink-dim);max-width:34em;}
+    .hero-sub b{color:var(--ink);font-weight:600;}
+    .hero-sub-short{font-size:clamp(1.02rem,2.9vw,1.2rem);font-weight:600;}
+
+    .hero-cta-btn{display:inline-block;text-decoration:none;text-align:center;font-size:1.02rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green-bright),var(--green) 55%,var(--green-deep));border-radius:13px;padding:16px 40px;margin-top:20px;box-shadow:0 12px 30px -8px rgba(234,88,12,.55);transition:transform .12s,box-shadow .15s;}
+    .hero-cta-btn:hover{transform:translateY(-1px);box-shadow:0 16px 34px -8px rgba(234,88,12,.62);}
+
+    .hero-chips{display:flex;flex-wrap:wrap;gap:8px;}
+    @media(max-width:1023px){
+      .hero-copy{text-align:center;}
+      .hero-sub{margin-left:auto;margin-right:auto;}
+      .hero-chips{justify-content:center;}
+    }
+    @media(min-width:1024px){
+      .hero .container{gap:30px 56px;}
+      .hero-chips{grid-column:1;align-self:start;}
+    }
+    .hero-chip{display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:var(--ink-dim);background:rgba(20,24,28,.45);border:1px solid var(--line);border-radius:999px;padding:7px 13px;backdrop-filter:blur(6px);}
+    .hero-chip b{color:var(--ink);}
+    .hero-chip .stars{color:#FBBF24;letter-spacing:1px;font-size:.72rem;}
+    .g-mini{font-weight:700;letter-spacing:.01em;}
+    .g-mini span:nth-child(1){color:#4285F4}.g-mini span:nth-child(2){color:#EA4335}.g-mini span:nth-child(3){color:#FBBC05}.g-mini span:nth-child(4){color:#4285F4}.g-mini span:nth-child(5){color:#34A853}.g-mini span:nth-child(6){color:#EA4335}
+
+    /* ===== Hero-Mockup: 3D-Buch mit Seiten-Fächer (deutet Inhalt an) ===== */
+    .hero-mockup{display:flex;justify-content:center;}
+    .book-container{position:relative;width:264px;height:288px;margin:0 auto;perspective:1200px;padding-top:18px;}
+    @media(min-width:1024px){.book-container{width:360px;height:394px;margin-top:0;}}
+    .book-float{position:relative;width:212px;height:100%;animation:bookFloat 5s ease-in-out infinite;}
+    @media(min-width:1024px){.book-float{width:290px;}}
+    .book-float::after{content:'';position:absolute;left:4%;right:-16%;bottom:-24px;height:30px;background:radial-gradient(ellipse at center,rgba(0,0,0,.5) 0%,transparent 70%);filter:blur(10px);z-index:-6;}
+    .book{position:relative;width:100%;height:100%;transform-style:preserve-3d;transform:rotateY(-6deg) rotateX(2deg);z-index:1;}
+    @keyframes bookFloat{0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);}}
+    .fan-page{position:absolute;top:2.5%;left:10%;width:88%;height:94%;background:#FBFAF7;border-radius:3px 9px 9px 3px;box-shadow:10px 5px 24px rgba(0,0,0,.30);transform-origin:left bottom;overflow:hidden;}
+    .fan-page svg{position:absolute;inset:0;width:100%;height:100%;}
+    .fan-1{transform:rotate(4.5deg) translateX(4%);z-index:-1;}
+    .fan-2{transform:rotate(9.5deg) translateX(8%);z-index:-2;}
+    .fan-3{transform:rotate(15deg) translateX(12%);z-index:-3;filter:brightness(.97);}
+    .book-glow{position:absolute;width:140%;height:140%;top:-20%;left:-20%;background:radial-gradient(circle,rgba(249,115,22,.25) 0%,transparent 60%);border-radius:50%;pointer-events:none;z-index:-2;filter:blur(30px);}
+    .book-seal{position:absolute;top:-18px;right:-18px;width:70px;height:70px;z-index:12;transform:rotate(12deg);filter:drop-shadow(0 6px 14px rgba(0,0,0,.4));pointer-events:none;}
+    @media(min-width:1024px){.book-seal{width:88px;height:88px;top:-22px;right:-20px;}}
+    .book-seal svg{width:100%;height:100%;display:block;}
+    .book-cover{position:relative;width:100%;height:100%;background:linear-gradient(160deg,#1C2127 0%,#22282E 30%,#2B323A 65%,#1C2127 100%);border-radius:3px 8px 8px 3px;box-shadow:0 25px 50px rgba(0,0,0,.5),0 12px 25px rgba(0,0,0,.3),inset 0 0 90px rgba(0,0,0,.25),inset 8px 0 14px rgba(0,0,0,.5),inset -2px 0 4px rgba(253,186,116,.12);padding:26px 24px 22px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;}
+    .book-cover::before{content:'';position:absolute;inset:0;background:linear-gradient(125deg,transparent 42%,rgba(255,255,255,.06) 50%,transparent 58%);pointer-events:none;}
+    .book-cover::after{content:'';position:absolute;top:11px;left:18px;right:11px;bottom:11px;border:1px solid rgba(253,186,116,.22);border-radius:3px;pointer-events:none;}
+    .book-spine-edge{position:absolute;left:0;top:0;bottom:0;width:14px;background:linear-gradient(90deg,rgba(0,0,0,.6) 0%,rgba(0,0,0,.3) 40%,rgba(0,0,0,.1) 70%,transparent 100%);pointer-events:none;z-index:3;}
+    .book-pages-edge{position:absolute;right:-3px;top:4px;bottom:4px;width:4px;background:linear-gradient(90deg,rgba(0,0,0,.3),transparent 30%),repeating-linear-gradient(180deg,#EBE7DC 0px,#EBE7DC .5px,#C9C3B5 .5px,#C9C3B5 1px);border-radius:0 2px 2px 0;transform:rotateY(-8deg);transform-origin:left center;box-shadow:1px 0 5px rgba(0,0,0,.2);}
+    .book-top{display:flex;align-items:center;position:relative;z-index:2;}
+    .book-logo-img{height:19px;width:auto;opacity:.95;}
+    .book-title-block{position:relative;z-index:2;}
+    .book-eyebrow{font-size:.56rem;font-weight:700;color:var(--mint);letter-spacing:.22em;text-transform:uppercase;margin-bottom:8px;}
+    .book-title{font-family:var(--font-serif);font-size:1.5rem;font-weight:600;color:var(--ink);line-height:1.12;letter-spacing:-.01em;}
+    .book-year{font-family:var(--font-serif);font-size:3rem;font-weight:600;background:linear-gradient(135deg,var(--mint),var(--green-bright));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;line-height:1.05;letter-spacing:-.02em;margin-top:2px;}
+    .book-divider{width:34px;height:2px;background:var(--green-bright);margin:10px 0 0;border-radius:2px;}
+    .book-bottom{position:relative;z-index:2;display:flex;justify-content:space-between;align-items:flex-end;}
+    .book-branch{font-size:.53rem;font-weight:600;color:rgba(244,241,232,.55);letter-spacing:.14em;text-transform:uppercase;max-width:120px;line-height:1.4;}
+    .book-pages-count{font-size:.5rem;font-weight:500;color:rgba(244,241,232,.4);letter-spacing:.08em;}
+    @media(min-width:1024px){.book-title{font-size:1.9rem;}.book-year{font-size:3.8rem;}.book-logo-img{height:23px;}.book-eyebrow{font-size:.62rem;}}
+    @media (prefers-reduced-motion: reduce){.book,.book-badge{animation:none;}}
+
+    /* ===== Quiz-Sektion ===== */
+    .quiz-section{padding-top:56px;}
+    .quiz-sec-head{text-align:center;max-width:660px;margin:0 auto 30px;}
+    .quiz-sec-head .section-label{justify-content:center;}
+    .quiz-sec-head .section-title{margin:0 auto;max-width:none;}
+    .quiz-sec-head .section-sub{margin-left:auto;margin-right:auto;}
+    .quiz-section .quiz-card{max-width:560px;margin:0 auto;}
+
+    /* ===== Quiz Card ===== */
+    .quiz-card{background:#fff;color:var(--q-ink);border-radius:var(--radius);box-shadow:var(--shadow);padding:22px 20px 20px;position:relative;}
+    @media(min-width:1024px){.quiz-card{padding:28px 28px 24px;}}
+    .quiz-head{display:flex;align-items:center;gap:14px;padding-bottom:16px;border-bottom:1px solid #EAE7DE;margin-bottom:16px;}
+    .quiz-card.quiz-started .quiz-head{display:none;}
+    .quiz-head-cover{width:52px;border-radius:6px;box-shadow:0 6px 16px rgba(20,24,28,.25);flex:none;}
+    .quiz-head-titles{flex:1;min-width:0;}
+    .quiz-head-titles .t1{font-weight:800;font-size:.95rem;line-height:1.3;}
+    .quiz-head-titles .t2{font-size:.78rem;color:var(--q-dim);margin-top:2px;}
+    .quiz-tag{flex:none;background:var(--green);color:#fff;font-size:.68rem;font-weight:800;letter-spacing:.06em;border-radius:7px;padding:5px 9px;transform:rotate(2deg);}
+
+    .quiz-progress{display:none;margin-bottom:14px;}
+    .quiz-progress.visible{display:block;}
+    .quiz-progress-top{display:flex;justify-content:space-between;font-size:.74rem;font-weight:600;color:var(--q-dim);margin-bottom:7px;}
+    .quiz-progress-bar{height:5px;background:#ECE9E0;border-radius:99px;overflow:hidden;}
+    .quiz-progress-fill{height:100%;width:20%;background:linear-gradient(90deg,var(--green),var(--green-bright));border-radius:99px;transition:width .35s ease;}
+
+    .quiz-slide{display:none;}
+    .quiz-slide.is-active{display:block;animation:slideIn .28s ease;}
+    @keyframes slideIn{from{opacity:0;transform:translateX(14px);}to{opacity:1;transform:none;}}
+
+    .quiz-kicker{font-size:.8rem;font-weight:700;color:var(--green-deep);margin-bottom:7px;}
+    .quiz-question{font-weight:800;font-size:1.12rem;line-height:1.35;letter-spacing:-.01em;}
+    .quiz-subtext{font-size:.84rem;color:var(--q-dim);margin:6px 0 14px;}
+    .quiz-options{display:grid;gap:9px;}
+    .quiz-tiles{display:grid;grid-template-columns:1fr 1fr;gap:10px;}
+    .quiz-tile{display:flex;flex-direction:column;align-items:center;justify-content:flex-start;gap:10px;text-align:center;font-family:var(--font-sans);background:#F7F5EF;border:1.5px solid #E5E1D6;border-radius:14px;padding:18px 10px 14px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;}
+    .quiz-tile:hover{border-color:var(--green);background:#FFF7ED;}
+    .quiz-tile:active{transform:scale(.97);}
+    .quiz-tile .tile-icon{font-size:2.3rem;line-height:1;}
+    .quiz-tile .tile-label{font-size:.86rem;line-height:1.35;color:var(--q-ink);}
+    .quiz-tile .tile-label b{display:block;font-weight:800;}
+    .quiz-option{display:flex;align-items:center;justify-content:space-between;gap:10px;width:100%;text-align:left;font-family:var(--font-sans);font-size:.95rem;font-weight:600;color:var(--q-ink);background:#F7F5EF;border:1.5px solid #E5E1D6;border-radius:13px;padding:14px 16px;cursor:pointer;transition:border-color .15s,background .15s,transform .1s;}
+    .quiz-option::after{content:'→';color:#B9B4A6;font-weight:700;transition:color .15s,transform .15s;}
+    .quiz-option:hover{border-color:var(--green);background:#FFF7ED;}
+    .quiz-option:hover::after{color:var(--green);transform:translateX(2px);}
+    .quiz-option:active{transform:scale(.985);}
+    .quiz-option.picked{border-color:var(--green);background:#FFEDD5;}
+    .quiz-option.picked::after{content:'✓';color:var(--green);}
+
+    .quiz-input-group{margin-bottom:11px;}
+    .quiz-label{display:block;font-size:.78rem;font-weight:700;margin-bottom:6px;color:var(--q-ink);}
+    .quiz-input{width:100%;font-family:var(--font-sans);font-size:16px;padding:13px 15px;border:1.5px solid #E5E1D6;border-radius:12px;background:#FBFAF7;color:var(--q-ink);outline:none;transition:border-color .15s,box-shadow .15s;}
+    .quiz-input:focus{border-color:var(--green);box-shadow:0 0 0 3px rgba(234,88,12,.13);background:#fff;}
+    .quiz-input.is-error{border-color:#DC2626;}
+    .phone-row{display:flex;gap:8px;}
+    .phone-prefix{flex:none;display:flex;align-items:center;font-family:var(--font-sans);font-size:16px;font-weight:600;color:var(--q-ink);background:#F1EFE8;border:1.5px solid #E5E1D6;border-radius:12px;padding:0 10px;cursor:pointer;}
+    select.phone-prefix{-webkit-appearance:none;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 12 12'%3E%3Cpath d='M2 4l4 4 4-4' fill='none' stroke='%234B5A50' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 8px center;background-size:11px;padding-right:26px;}
+    select.phone-prefix:focus{outline:none;border-color:var(--green);}
+
+    .quiz-cta{width:100%;font-family:var(--font-sans);font-size:1.02rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green-bright),var(--green) 55%,var(--green-deep));border:none;border-radius:13px;padding:16px 18px;cursor:pointer;box-shadow:0 10px 24px -8px rgba(234,88,12,.55);transition:transform .12s,box-shadow .15s,opacity .15s;margin-top:4px;}
+    .quiz-cta:hover:not(:disabled){transform:translateY(-1px);box-shadow:0 14px 28px -8px rgba(234,88,12,.6);}
+    .quiz-cta:active:not(:disabled){transform:scale(.985);}
+    .quiz-cta:disabled{opacity:.45;cursor:not-allowed;box-shadow:none;}
+
+    .quiz-back{background:none;border:none;font-family:var(--font-sans);font-size:.8rem;font-weight:600;color:var(--q-dim);cursor:pointer;padding:9px 2px 0;}
+    .quiz-back:hover{color:var(--q-ink);}
+    .quiz-error{display:none;font-size:.8rem;font-weight:600;color:#DC2626;margin-top:8px;}
+    .quiz-error.active{display:block;}
+    .quiz-trustline{display:flex;flex-wrap:wrap;gap:6px 14px;margin-top:14px;padding-top:13px;border-top:1px solid #EAE7DE;font-size:.72rem;color:var(--q-dim);}
+    .quiz-trustline span{display:flex;align-items:center;gap:5px;}
+    .quiz-privacy{display:flex;align-items:flex-start;gap:10px;font-size:.78rem;color:var(--q-dim);margin:4px 0 12px;cursor:pointer;line-height:1.5;}
+    .quiz-privacy input{width:17px;height:17px;margin-top:2px;accent-color:var(--green);flex:none;cursor:pointer;}
+    .quiz-privacy a{color:var(--green-deep);}
+
+    /* Success */
+    .quiz-success{display:none;text-align:center;padding:8px 0 4px;}
+    .quiz-success.active{display:block;animation:slideIn .3s ease;}
+    .success-check{width:56px;height:56px;border-radius:50%;background:#FFEDD5;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;font-size:1.5rem;color:var(--green);border:2px solid var(--green-bright);}
+    .quiz-success h3{font-family:var(--font-serif);font-weight:600;font-size:1.45rem;letter-spacing:-.01em;margin-bottom:6px;}
+    .quiz-success p{font-size:.86rem;color:var(--q-dim);}
+    .success-open{display:block;width:100%;text-decoration:none;text-align:center;font-size:1.02rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green-bright),var(--green) 55%,var(--green-deep));border-radius:13px;padding:16px 18px;margin:16px 0 10px;box-shadow:0 10px 24px -8px rgba(234,88,12,.55);}
+    .success-mailnote{font-size:.78rem;color:var(--q-dim);}
+    .success-teamnote{font-size:.78rem;font-weight:700;color:var(--green-deep);margin-top:12px;}
+
+    /* ===== Sections ===== */
+    section{padding:64px 0;}
+    @media(min-width:1024px){section{padding:88px 0;}}
+    .section-label{display:flex;align-items:center;gap:10px;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--mint);margin-bottom:14px;}
+    .section-label::before{content:'';width:26px;height:1.5px;background:var(--mint);}
+    .section-title{font-family:var(--font-serif);font-weight:600;font-size:clamp(1.7rem,5.6vw,2.6rem);line-height:1.13;letter-spacing:-.01em;max-width:20em;}
+    .section-sub{color:var(--ink-dim);margin-top:12px;max-width:38em;font-size:.98rem;}
+
+    /* Logos */
+    .logos{padding:34px 0 10px;}
+    .logos-label{text-align:center;font-size:.72rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-faint);margin-bottom:20px;}
+    .marquee{overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);}
+    .marquee-track{display:flex;gap:12px;width:max-content;animation:marquee 36s linear infinite;}
+    @keyframes marquee{to{transform:translateX(-50%);}}
+    .proof-band{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;max-width:760px;margin:0 auto;padding:0 18px;}
+    .proof-item{background:rgba(255,255,255,.04);border:1px solid var(--line);border-radius:14px;padding:14px 10px;text-align:center;}
+    .proof-item b{display:block;font-family:var(--font-serif);font-size:1.45rem;font-weight:600;color:var(--mint);line-height:1.1;letter-spacing:-.01em;}
+    .proof-item span{display:block;font-size:.72rem;color:var(--ink-dim);margin-top:5px;line-height:1.3;}
+    @media(min-width:768px){.proof-item b{font-size:1.9rem;}.proof-item span{font-size:.82rem;}}
+    .logo-chip{flex:none;background:#fff;border-radius:12px;padding:10px 18px;display:flex;align-items:center;justify-content:center;height:58px;}
+    .logo-chip img{height:36px;width:auto;max-width:120px;object-fit:contain;}
+
+
+    /* Curiosity-Block */
+    .tease-grid{display:grid;gap:30px;align-items:center;}
+    @media(min-width:1024px){.tease-grid{grid-template-columns:1.15fr .85fr;gap:56px;}}
+    .tease-list{list-style:none;margin-top:24px;display:grid;gap:14px;}
+    .tease-list li{position:relative;padding-left:34px;font-size:.98rem;line-height:1.6;color:var(--ink-dim);}
+    .tease-list li b{color:var(--ink);}
+    .tease-list li::before{content:'';position:absolute;left:0;top:6px;width:18px;height:18px;border-radius:50%;background:rgba(249,115,22,.14);border:1.5px solid var(--green-bright);}
+    .tease-list li::after{content:'?';position:absolute;left:5px;top:5px;font-size:.72rem;font-weight:800;color:var(--green-bright);}
+    .tease-note{margin-top:22px;font-family:var(--font-serif);font-style:italic;font-weight:600;font-size:1.05rem;color:var(--mint);}
+    .tease-cover{max-width:330px;margin:0 auto;}
+    .tease-cover .preview-frame{transform:rotate(1.4deg);}
+
+    /* Preview slider */
+    .preview-scroll{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:26px 20px 10px;margin:0 -20px;-webkit-overflow-scrolling:touch;scrollbar-width:none;}
+    .preview-scroll::-webkit-scrollbar{display:none;}
+    @media(min-width:1024px){.preview-scroll{margin:0;padding:30px 0 10px;overflow-x:visible;}}
+    .preview-card{flex:0 0 78%;max-width:330px;scroll-snap-align:center;}
+    @media(min-width:1024px){.preview-card{flex:1;}}
+    .preview-frame{background:#fff;border-radius:14px;padding:8px;box-shadow:0 18px 44px -14px rgba(0,0,0,.5);transition:transform .25s ease;}
+    .preview-card:nth-child(1) .preview-frame{transform:rotate(-1.2deg);}
+    .preview-card:nth-child(3) .preview-frame{transform:rotate(1.2deg);}
+    .preview-frame:hover{transform:rotate(0) translateY(-4px);}
+    .preview-frame img{border-radius:8px;aspect-ratio:495/700;object-fit:cover;width:100%;}
+    .preview-meta{display:flex;align-items:baseline;gap:9px;margin-top:13px;padding:0 4px;}
+    .preview-page{flex:none;font-size:.68rem;font-weight:800;letter-spacing:.08em;color:var(--bg);background:var(--mint);border-radius:6px;padding:3px 7px;}
+    .preview-caption{font-size:.85rem;font-weight:600;color:var(--ink-dim);line-height:1.45;}
+    .preview-hint{text-align:center;font-size:.75rem;color:var(--ink-faint);margin-top:14px;}
+    @media(min-width:1024px){.preview-hint{display:none;}}
+
+    /* Chapters */
+    .chapters{display:grid;gap:10px;margin-top:30px;}
+    @media(min-width:768px){.chapters{grid-template-columns:1fr 1fr;gap:12px;}}
+    .chapter{display:flex;gap:14px;align-items:flex-start;background:var(--bg-2);border:1px solid var(--line);border-radius:15px;padding:15px 17px;}
+    .chapter-num{flex:none;font-family:var(--font-serif);font-style:italic;font-weight:600;font-size:1.05rem;color:var(--mint);width:26px;padding-top:1px;}
+    .chapter-body b{display:block;font-size:.92rem;font-weight:700;line-height:1.4;}
+    .chapter-body span{font-size:.8rem;color:var(--ink-dim);}
+    .chapter-page{flex:none;margin-left:auto;font-size:.7rem;font-weight:700;color:var(--ink-faint);white-space:nowrap;padding-top:3px;}
+
+    /* Numbers */
+    .numbers-grid{display:grid;gap:14px;margin-top:34px;}
+    @media(min-width:768px){.numbers-grid{grid-template-columns:repeat(3,1fr);gap:18px;}}
+    .number-card{background:var(--bg-2);border:1px solid var(--line);border-radius:var(--radius);padding:26px 22px;}
+    .number-big{font-family:var(--font-serif);font-weight:600;font-size:clamp(2.3rem,7vw,3rem);line-height:1;color:var(--mint);letter-spacing:-.02em;}
+    .number-label{font-weight:700;font-size:.95rem;margin:10px 0 6px;}
+    .number-desc{font-size:.85rem;color:var(--ink-dim);}
+    .number-link{display:inline-block;font-size:.78rem;font-weight:700;color:var(--green-bright);margin-top:12px;}
+    .numbers-src{font-size:.72rem;color:var(--ink-faint);margin-top:18px;}
+
+    /* Network map */
+    .network-grid{display:grid;gap:30px;margin-top:8px;align-items:center;}
+    @media(min-width:1024px){.network-grid{grid-template-columns:1fr 1.05fr;gap:56px;}}
+    .network-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:22px;}
+    .network-stat b{display:block;font-family:var(--font-serif);font-weight:600;font-size:clamp(1.25rem,5.6vw,1.6rem);color:var(--mint);letter-spacing:-.01em;white-space:nowrap;}
+    .network-stat span{display:block;font-size:.72rem;color:var(--ink-dim);line-height:1.35;margin-top:2px;}
+    @media(min-width:768px){.network-stats{gap:22px;}.network-stat span{font-size:.78rem;}}
+    .network-map{position:relative;max-width:480px;margin:10px auto 0;width:100%;}
+    .network-map svg{width:100%;height:auto;display:block;filter:drop-shadow(0 18px 40px rgba(0,0,0,.35));}
+    .country{fill:rgba(249,115,22,.07);stroke:rgba(253,186,116,.38);stroke-width:1.4;stroke-linejoin:round;}
+    .city-dot{fill:var(--green-bright);}
+    .city-core{fill:#fff;}
+    .city-ring{fill:none;stroke:var(--green-bright);stroke-width:2;transform-box:fill-box;transform-origin:center;animation:ringPulse 2.8s ease-out infinite;}
+    @keyframes ringPulse{0%{transform:scale(.35);opacity:.85;}75%{transform:scale(2.7);opacity:0;}100%{transform:scale(2.7);opacity:0;}}
+    .map-chip{position:absolute;display:flex;gap:9px;align-items:center;background:rgba(20,24,28,.92);border:1px solid rgba(253,186,116,.32);backdrop-filter:blur(6px);border-radius:12px;padding:8px 12px;font-size:.7rem;line-height:1.3;color:var(--ink-dim);box-shadow:0 12px 28px rgba(0,0,0,.5);opacity:0;transform:translate(-50%,-115%) translateY(6px);transition:opacity .25s ease,transform .25s ease;white-space:nowrap;pointer-events:none;z-index:3;}
+    .map-chip.on{opacity:1;transform:translate(-50%,-115%);}
+    .map-chip b{display:block;color:#fff;font-size:.74rem;}
+    .map-chip .cd{width:8px;height:8px;border-radius:50%;background:var(--green-bright);flex:none;box-shadow:0 0 0 0 rgba(249,115,22,.5);animation:pulse 2.2s infinite;}
+    .map-ping{position:absolute;width:14px;height:14px;margin:-7px 0 0 -7px;border-radius:50%;border:2.5px solid var(--green-bright);opacity:0;transform:scale(.5);pointer-events:none;z-index:2;}
+    .map-ping.on{animation:pingGrow 1.1s ease-out infinite;}
+    @keyframes pingGrow{0%{opacity:.95;transform:scale(.5);}80%{opacity:0;transform:scale(2.4);}100%{opacity:0;transform:scale(2.4);}}
+    @media (prefers-reduced-motion: reduce){
+      .city-ring{animation:none;opacity:0;}
+      .map-ping{display:none;}
+    }
+
+    /* Audience */
+    .audience-card{display:grid;gap:0;background:var(--bg-2);border:1px solid var(--line);border-radius:26px;overflow:hidden;}
+    @media(min-width:900px){.audience-card{grid-template-columns:1fr 1.15fr;align-items:stretch;}}
+    .audience-img{position:relative;min-height:240px;}
+    .audience-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 28%;}
+    @media(max-width:899px){.audience-img{aspect-ratio:4/3;min-height:0;}.audience-img img{position:static;height:100%;aspect-ratio:4/3;}}
+    .audience-copy{padding:28px 24px;}
+    @media(min-width:900px){.audience-copy{padding:44px 42px;}}
+    .audience-list{list-style:none;margin-top:16px;display:grid;gap:9px;}
+    .audience-list li{position:relative;padding-left:26px;font-size:.9rem;color:var(--ink-dim);}
+    .audience-list li::before{content:'✓';position:absolute;left:0;top:0;color:var(--green-bright);font-weight:800;}
+
+    /* Testimonials */
+    .testi-grid{display:grid;gap:14px;margin-top:34px;}
+    @media(min-width:768px){.testi-grid{grid-template-columns:repeat(3,1fr);gap:18px;}}
+    .testi{background:#fff;color:var(--q-ink);border-radius:var(--radius);padding:24px 22px;display:flex;flex-direction:column;gap:12px;}
+    .testi-result{font-family:var(--font-serif);font-weight:600;font-size:1.15rem;letter-spacing:-.01em;color:#166534;}
+    .testi .stars{color:#FBBF24;font-size:.85rem;letter-spacing:2px;margin-top:-4px;}
+    .testi p{font-size:.9rem;line-height:1.6;flex:1;}
+    .testi-foot{display:flex;align-items:center;gap:11px;}
+    .testi-avatar{width:38px;height:38px;border-radius:50%;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:.82rem;flex:none;}
+    .testi-name{font-weight:700;font-size:.85rem;line-height:1.3;}
+    .testi-verified{font-size:.72rem;color:var(--q-dim);}
+    .google-badge{display:inline-flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:4px 8px;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:9px 18px;font-size:.82rem;font-weight:600;color:var(--ink-dim);margin-top:22px;}
+    .google-badge b{color:var(--ink);}
+    .gb-item{white-space:nowrap;}
+    .gb-item + .gb-item::before{content:'·';margin-right:8px;color:var(--ink-faint);}
+
+    /* Final CTA */
+    .final-cta{background:linear-gradient(150deg,#123522,var(--bg-2) 70%);border:1px solid rgba(253,186,116,.22);border-radius:26px;padding:44px 26px;text-align:center;position:relative;overflow:hidden;}
+    @media(min-width:768px){.final-cta{padding:64px 48px;}}
+    .final-cta::before{content:'';position:absolute;top:-70px;right:-70px;width:230px;height:230px;border-radius:50%;background:radial-gradient(circle,rgba(249,115,22,.22),transparent 70%);}
+    .final-cta h2{font-family:var(--font-serif);font-weight:600;font-size:clamp(1.75rem,6vw,2.7rem);line-height:1.12;letter-spacing:-.01em;max-width:17em;margin:0 auto;}
+    .final-cta h2 .ital{font-style:italic;color:var(--mint);}
+    .final-cta p{color:var(--ink-dim);margin:16px auto 26px;max-width:32em;font-size:.95rem;}
+    .btn-primary{display:inline-block;text-decoration:none;font-size:1.05rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green-bright),var(--green) 55%,var(--green-deep));border-radius:14px;padding:17px 34px;box-shadow:0 12px 30px -8px rgba(234,88,12,.55);transition:transform .12s,box-shadow .15s;}
+    .btn-primary:hover{transform:translateY(-1px);box-shadow:0 16px 34px -8px rgba(234,88,12,.62);}
+    .final-note{font-size:.76rem;color:var(--ink-faint);margin-top:14px;}
+
+    /* Footer */
+    footer{border-top:1px solid var(--line);padding:34px 0 110px;margin-top:20px;}
+    @media(min-width:768px){footer{padding-bottom:44px;}}
+    .footer-row{display:flex;flex-wrap:wrap;gap:12px 26px;align-items:center;justify-content:space-between;font-size:.78rem;color:var(--ink-faint);}
+    .footer-links{display:flex;gap:20px;}
+    .footer-links a{color:var(--ink-dim);text-decoration:none;}
+    .footer-links a:hover{color:var(--ink);}
+    .footer-note{font-size:.7rem;color:var(--ink-faint);margin-top:16px;max-width:52em;}
+
+    /* Sticky CTA */
+    .sticky-cta{position:fixed;left:0;right:0;bottom:0;z-index:50;padding:10px 16px calc(10px + env(safe-area-inset-bottom));background:rgba(20,24,28,.82);backdrop-filter:blur(10px);border-top:1px solid var(--line);transform:translateY(110%);transition:transform .3s ease;}
+    .sticky-cta.visible{transform:none;}
+    .sticky-cta a{display:block;text-align:center;text-decoration:none;font-size:1rem;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--green-bright),var(--green) 55%,var(--green-deep));border-radius:13px;padding:15px;box-shadow:0 10px 24px -8px rgba(234,88,12,.55);}
+    @media(min-width:1024px){.sticky-cta{display:none;}}
+  </style>
+</head>
+<body>
+
+  <!-- ===== TOPBAR ===== -->
+  <header class="topbar">
+    <div class="container">
+      <img src="assets/logo-white.png" alt="GreenCareers" width="120" height="40">
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <div class="hero-bg">
+      <picture>
+        <source media="(min-width: 768px)" srcset="assets/hero-desktop.jpg">
+        <img src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" alt="" decoding="async">
+      </picture>
+    </div>
+    <div class="container">
+      <div class="hero-copy">
+        <span class="hero-badge"><span class="dot"></span> Kostenlos für Straßen- &amp; Tiefbau-Inhaber</span>
+        <h1>Wie Straßen- und Tiefbau-Betriebe 2026 offene Stellen <span class="ital nowrap">in unter 90 Tagen</span> besetzen</h1>
+        <p class="hero-sub hero-sub-short">32&nbsp;Seiten – gratis als PDF</p>
+        <a class="hero-cta-btn" href="#quiz" data-scroll-quiz id="hero-cta">Report herunterladen →</a>
+      </div>
+
+      <div class="hero-mockup">
+        <div class="book-container">
+          <div class="book-glow"></div>
+          <div class="book-float">
+            <div class="fan-page fan-3">
+              <svg viewBox="0 0 200 270" aria-hidden="true"><g transform="translate(18 0)">
+                <polyline points="118,64 132,48 146,58 160,36 176,44" fill="none" stroke="rgba(234,88,12,.55)" stroke-width="3" stroke-linecap="round"/>
+                <rect x="118" y="84" width="52" height="4" rx="2" fill="#8E9498"/>
+                <rect x="118" y="98" width="60" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="108" width="46" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="118" width="56" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="146" width="58" height="34" rx="4" fill="none" stroke="#D8D4C8" stroke-width="2"/>
+                <rect x="126" y="158" width="28" height="3" rx="1.5" fill="#C9C3B5"/>
+                <rect x="126" y="167" width="36" height="3" rx="1.5" fill="#C9C3B5"/>
+                <rect x="118" y="200" width="60" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="210" width="50" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="220" width="56" height="3" rx="1.5" fill="#DDD8CC"/>
+              </g></svg>
+            </div>
+            <div class="fan-page fan-2">
+              <svg viewBox="0 0 200 270" aria-hidden="true"><g transform="translate(18 0)">
+                <circle cx="146" cy="62" r="22" fill="none" stroke="#DDD8CC" stroke-width="9"/>
+                <path d="M146 40 a22 22 0 0 1 20.5 30" fill="none" stroke="rgba(234,88,12,.55)" stroke-width="9"/>
+                <rect x="118" y="100" width="56" height="4" rx="2" fill="#8E9498"/>
+                <rect x="118" y="114" width="60" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="124" width="48" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="152" width="14" height="3" rx="1.5" fill="rgba(234,88,12,.5)"/>
+                <rect x="138" y="152" width="38" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="164" width="14" height="3" rx="1.5" fill="rgba(234,88,12,.5)"/>
+                <rect x="138" y="164" width="32" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="176" width="14" height="3" rx="1.5" fill="rgba(234,88,12,.5)"/>
+                <rect x="138" y="176" width="40" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="206" width="58" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="216" width="44" height="3" rx="1.5" fill="#DDD8CC"/>
+              </g></svg>
+            </div>
+            <div class="fan-page fan-1">
+              <svg viewBox="0 0 200 270" aria-hidden="true"><g transform="translate(18 0)">
+                <rect x="118" y="42" width="54" height="4" rx="2" fill="#8E9498"/>
+                <rect x="118" y="56" width="60" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="66" width="50" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="122" y="128" width="10" height="34" rx="2" fill="#D8D4C8"/>
+                <rect x="136" y="112" width="10" height="50" rx="2" fill="#C9C3B5"/>
+                <rect x="150" y="96" width="10" height="66" rx="2" fill="rgba(234,88,12,.5)"/>
+                <rect x="164" y="120" width="10" height="42" rx="2" fill="#D8D4C8"/>
+                <rect x="118" y="176" width="58" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="186" width="46" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="196" width="54" height="3" rx="1.5" fill="#DDD8CC"/>
+                <rect x="118" y="224" width="34" height="10" rx="5" fill="rgba(234,88,12,.4)"/>
+              </g></svg>
+            </div>
+            <div class="book-seal" aria-hidden="true">
+              <svg viewBox="0 0 100 100">
+                <defs><linearGradient id="sealGrad" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#F97316"/><stop offset="1" stop-color="#C2410C"/></linearGradient></defs>
+                <polygon fill="url(#sealGrad)" points="50.0,0.0 55.7,6.9 62.9,1.7 66.6,9.8 75.0,6.7 76.5,15.5 85.4,14.6 84.5,23.5 93.3,25.0 90.2,33.4 98.3,37.1 93.1,44.3 100.0,50.0 93.1,55.7 98.3,62.9 90.2,66.6 93.3,75.0 84.5,76.5 85.4,85.4 76.5,84.5 75.0,93.3 66.6,90.2 62.9,98.3 55.7,93.1 50.0,100.0 44.3,93.1 37.1,98.3 33.4,90.2 25.0,93.3 23.5,84.5 14.6,85.4 15.5,76.5 6.7,75.0 9.8,66.6 1.7,62.9 6.9,55.7 0.0,50.0 6.9,44.3 1.7,37.1 9.8,33.4 6.7,25.0 15.5,23.5 14.6,14.6 23.5,15.5 25.0,6.7 33.4,9.8 37.1,1.7 44.3,6.9"/>
+                <circle cx="50" cy="50" r="36" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1.4" stroke-dasharray="2.5 3"/>
+                <text x="50" y="56" text-anchor="middle" font-family="Inter,-apple-system,sans-serif" font-size="17.5" font-weight="800" letter-spacing=".5" fill="#fff">GRATIS</text>
+              </svg>
+            </div>
+            <div class="book">
+              <div class="book-pages-edge"></div>
+              <div class="book-cover">
+                <div class="book-spine-edge"></div>
+                <div class="book-top">
+                  <img class="book-logo-img" src="assets/logo-white.png" alt="GreenCareers">
+                </div>
+                <div class="book-title-block">
+                  <div class="book-eyebrow">Der Branchen-Report</div>
+                  <div class="book-title">Recruiting-<br>Report</div>
+                  <div class="book-year">2026</div>
+                  <div class="book-divider"></div>
+                </div>
+                <div class="book-bottom">
+                  <span class="book-branch">Straßen- &amp;<br>Tiefbau</span>
+                  <span class="book-pages-count">32&nbsp;Seiten</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-chips">
+        <span class="hero-chip">🔒 DSGVO-konform</span>
+        <span class="hero-chip"><span class="g-mini"><span>G</span><span>o</span><span>o</span><span>g</span><span>l</span><span>e</span></span> <span class="stars">★★★★★</span> <b>4,9</b></span>
+        <span class="hero-chip"><b>500+</b> Arbeitgeber</span>
+        <span class="hero-chip"><b>30.000+</b> Fachkräfte</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROOF-BAND (statt Kundenlogo-Marquee: keine Bau-Logos freigegeben) ===== -->
+  <div class="logos">
+    <div class="logos-label">Die Karriereplattform für das Bau-Hauptgewerbe</div>
+    <div class="proof-band">
+      <div class="proof-item"><b>500+</b><span>Bau-Betriebe vertrauen GreenCareers</span></div>
+      <div class="proof-item"><b>15.000+</b><span>Bau-Fachkräfte im Pool</span></div>
+      <div class="proof-item"><b>&lt;&nbsp;90 Tage</b><span>bis zur Einstellung</span></div>
+    </div>
+  </div>
+
+  <!-- ===== QUIZ-SEKTION ===== -->
+  <section class="quiz-section" id="report">
+    <div class="container">
+      <div class="quiz-sec-head">
+        <div class="section-label">Recruiting-Report 2026</div>
+        <h2 class="section-title">Kostenloser 32-Seiten-Report – <em class="accent">in 45&nbsp;Sek. angefordert.</em></h2>
+        <p class="section-sub">Ein Klick, drei kurze Angaben – dann erhalten Sie den Report per E-Mail und WhatsApp. Keine Verpflichtung.</p>
+      </div>
+
+      <!-- ===== QUIZ CARD ===== -->
+      <div class="quiz-card" id="quiz">
+        <div class="quiz-head">
+          <img class="quiz-head-cover" src="assets/report-cover-thumb.jpg" alt="Recruiting-Report 2026 Cover" width="52" height="74">
+          <div class="quiz-head-titles">
+            <div class="t1">Recruiting-Report 2026</div>
+            <div class="t2">32 Seiten · PDF · Sofort-Zugriff</div>
+          </div>
+          <span class="quiz-tag">GRATIS</span>
+        </div>
+
+        <div class="quiz-progress" id="quiz-progress">
+          <div class="quiz-progress-top">
+            <span id="quiz-progress-label">Schritt 1 von 5</span>
+            <span id="quiz-progress-time">≈ 45&nbsp;Sek. übrig</span>
+          </div>
+          <div class="quiz-progress-bar"><div class="quiz-progress-fill" id="quiz-progress-fill"></div></div>
+        </div>
+
+        <div id="lead-form">
+          <!-- STEP 1 — Rolle (einzige Quiz-Frage, Bild-Kacheln nach Boost-Vorbild:
+               niederschwelliger Identitäts-Klick statt Bedarfsabfrage; Inhaber-
+               Filter ist die Qualifizierung, die der Vertrieb wirklich braucht) -->
+          <div class="quiz-slide is-active" data-slide="1">
+            <h3 class="quiz-question">Was trifft auf Sie zu?</h3>
+            <p class="quiz-subtext">Ein Klick – dann geht es direkt weiter zum Report.</p>
+            <div class="quiz-tiles">
+              <button type="button" class="quiz-tile" data-field="rolle" data-value="inhaber-gf"><span class="tile-icon">🧑‍💼</span><span class="tile-label"><b>Inhaber / GF</b> Straßen- &amp; Tiefbau-Betrieb</span></button>
+              <button type="button" class="quiz-tile" data-field="rolle" data-value="angestellt"><span class="tile-icon">👷</span><span class="tile-label"><b>Angestellt</b> im Tiefbau</span></button>
+              <button type="button" class="quiz-tile" data-field="rolle" data-value="zulieferer"><span class="tile-icon">🚚</span><span class="tile-label"><b>Zulieferer o.&nbsp;ä.</b> Baubranche</span></button>
+              <button type="button" class="quiz-tile" data-field="rolle" data-value="andere-branche"><span class="tile-icon">💼</span><span class="tile-label"><b>Andere</b> Branche</span></button>
+            </div>
+            <div class="quiz-trustline">
+              <span>⏱ 4 kurze Schritte, unter 45&nbsp;Sek.</span>
+              <span>🔒 DSGVO-konform</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Daten-Slides als inertes Template: nichts Formular-artiges im
+             Initial-DOM (Meta-IAB-Autoscroll-Fix, Stufe 3). mountContactFields()
+             hängt die Slides bei der ersten Quiz-Interaktion ein. -->
+        <template id="tpl-slides-234">
+          <!-- STEP 2 — Name + Firma -->
+          <div class="quiz-slide" data-slide="2">
+            <div class="quiz-kicker">Passt – Ihr Report wird vorbereitet.</div>
+            <h3 class="quiz-question">An wen dürfen wir den Report adressieren?</h3>
+            <div class="quiz-input-group" style="margin-top:14px;">
+              <label class="quiz-label" for="fullname">Vor- und Nachname</label>
+              <input type="text" class="quiz-input" id="fullname" name="fullname" placeholder="z. B. Max Müller" autocomplete="name" autocapitalize="words" spellcheck="false">
+            </div>
+            <div class="quiz-input-group">
+              <label class="quiz-label" for="unternehmen">Firmenname</label>
+              <input type="text" class="quiz-input" id="unternehmen" name="unternehmen" placeholder="z. B. Müller Tiefbau GmbH" autocomplete="organization" autocapitalize="words" spellcheck="false">
+            </div>
+            <button type="button" class="quiz-cta" id="quiz-step2-cta" data-next-from="2">Weiter zum Report →</button>
+            <div class="quiz-error" id="quiz-step2-error">Bitte tragen Sie Vor-, Nachnamen und Firmennamen ein.</div>
+            <button type="button" class="quiz-back" data-back="1">← Zurück</button>
+          </div>
+
+          <!-- STEP 3 — E-Mail -->
+          <div class="quiz-slide" data-slide="3">
+            <div class="quiz-kicker" id="quiz-kicker-greeting">Gleich ist Ihr Report unterwegs …</div>
+            <h3 class="quiz-question">An welche E-Mail dürfen wir den Report senden?</h3>
+            <div class="quiz-input-group" style="margin-top:14px;">
+              <label class="quiz-label" for="email">Geschäftliche E-Mail</label>
+              <input type="email" class="quiz-input" id="email" name="email" placeholder="ihre@firma.de" autocomplete="email" autocapitalize="none" spellcheck="false" inputmode="email">
+            </div>
+            <button type="button" class="quiz-cta" id="quiz-step3-cta" data-next-from="3">Weiter →</button>
+            <div class="quiz-error" id="quiz-step3-error">Bitte tragen Sie eine gültige E-Mail-Adresse ein.</div>
+            <button type="button" class="quiz-back" data-back="2">← Zurück</button>
+          </div>
+
+          <!-- STEP 4 — Handynummer (WhatsApp-Versand) + Datenschutz -->
+          <div class="quiz-slide" data-slide="4">
+            <div class="quiz-kicker">✅ Ihr Report liegt zum Versand bereit – letzter Schritt:</div>
+            <h3 class="quiz-question">Wohin dürfen wir den Report per WhatsApp senden?</h3>
+            <p class="quiz-subtext">So haben Sie den Report <b>direkt auf dem Handy</b> – zusätzlich zur E-Mail-Kopie.</p>
+            <div class="quiz-input-group">
+              <label class="quiz-label" for="phone">Ihre Handynummer</label>
+              <div class="phone-row">
+                <select class="phone-prefix" id="phone-country" aria-label="Ländervorwahl">
+                  <option value="49" selected>DE +49</option>
+                  <option value="43">AT +43</option>
+                  <option value="41">CH +41</option>
+                  <option value="352">LU +352</option>
+                  <option value="33">FR +33</option>
+                  <option value="31">NL +31</option>
+                  <option value="32">BE +32</option>
+                  <option value="48">PL +48</option>
+                </select>
+                <input type="tel" class="quiz-input" id="phone" name="phone" placeholder="170 1234567" autocomplete="tel" inputmode="tel">
+              </div>
+            </div>
+            <label class="quiz-privacy">
+              <input type="checkbox" id="privacy" name="privacy">
+              <span>Ich stimme der <a href="https://www.green-careers.de/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a> zu und bin einverstanden, von GreenCareers kontaktiert zu werden.</span>
+            </label>
+            <button type="button" class="quiz-cta" id="quiz-final-submit" disabled>Report holen →</button>
+            <div class="quiz-error" id="quiz-step4-error">Bitte Handynummer eintragen und Datenschutz bestätigen.</div>
+            <button type="button" class="quiz-back" data-back="3">← Zurück</button>
+            <div class="quiz-trustline"><span>🔒 Kein Spam · Versand als PDF · DSGVO-konform</span></div>
+          </div>
+        </template>
+
+        <!-- SUCCESS -->
+        <div class="quiz-success" id="form-success">
+          <div class="success-check">✓</div>
+          <h3>Freigeschaltet.</h3>
+          <p>Ihr Recruiting-Report 2026 ist bereit – viel Erfolg bei der nächsten Einstellung.</p>
+          <a class="success-open" id="report-open" href="assets/recruiting-report-2026-tiefbau.pdf" target="_blank" rel="noopener">Report jetzt öffnen (PDF, 32&nbsp;Seiten) →</a>
+          <p class="success-mailnote">Ihre Kopie ist außerdem per <b>WhatsApp und E-Mail</b> unterwegs – so haben Sie den Report auch unterwegs griffbereit.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CURIOSITY ===== -->
+  <section id="einblick">
+    <div class="container">
+      <div class="tease-grid">
+        <div>
+          <div class="section-label reveal">Im Report</div>
+          <h2 class="section-title reveal">Was Sie nach 20&nbsp;Minuten <em class="accent">Lesezeit wissen.</em></h2>
+          <ul class="tease-list reveal">
+            <li>Welcher Recruiting-Weg fast jeden bezahlten Kanal schlägt – und warum ihn trotzdem kaum ein Betrieb konsequent nutzt</li>
+            <li>Welcher beliebte Kanal Sie pro Einstellung <b>fünfstellig</b> kostet, ohne dass es je auf einer Rechnung auftaucht</li>
+            <li>Woran Sie in fünf Minuten erkennen, ob Ihr Recruiting dieses Jahr liefert – oder Sie eine Saison verlieren</li>
+            <li>Der 3-Stufen-Plan, mit dem Betriebe Ihrer Größe in 90&nbsp;Tagen ein planbares System stehen haben</li>
+          </ul>
+          <p class="tease-note reveal">Die Antworten stehen im Report – bewusst nicht auf dieser Seite.</p>
+        </div>
+        <div class="tease-cover reveal">
+          <div class="preview-frame"><img src="assets/report-cover-large.jpg" alt="Recruiting-Report 2026 – Cover" loading="lazy" decoding="async"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NETZWERK-MAP ===== -->
+  <section id="netzwerk" style="padding-top:20px;">
+    <div class="container">
+      <div class="network-grid">
+        <div>
+          <div class="section-label reveal">Die Datenbasis hinter dem Report</div>
+          <h2 class="section-title reveal">30.000+ Fachkräfte, <em class="accent">live im DACH-Raum.</em></h2>
+          <p class="section-sub reveal">Jeden Tag kommen im GreenCareers-Netzwerk neue Bewerbungen, Wechselwünsche und Einstellungen aus dem Bau-Hauptgewerbe und der grünen Branche zusammen. Der Report macht daraus Benchmarks, mit denen Sie Ihre nächste Einstellung planen können – konkret für Betriebe Ihrer Größe.</p>
+          <div class="network-stats reveal">
+            <div class="network-stat"><b>15.000+</b><span>Bau-Fachkräfte im Pool</span></div>
+            <div class="network-stat"><b>500+</b><span>Bau-Betriebe</span></div>
+            <div class="network-stat"><b>900+</b><span>Platzierungen</span></div>
+          </div>
+        </div>
+        <div class="network-map reveal">
+          <svg viewBox="0 0 460 540" role="img" aria-label="Karte von Deutschland, Österreich und der Schweiz mit aktiven Fachkräfte-Standorten">
+            <path class="country" d="M156.6 17.6 157.2 39.2 193.0 52.1 192.6 71.9 228.6 61.4 248.5 46.2 288.5 68.2 305.2 85.9 313.5 114.2 303.6 129.1 316.5 148.9 325.2 178.7 322.5 197.9 337.0 233.4 321.2 239.3 311.9 232.9 303.0 243.4 277.6 254.2 264.4 268.1 238.7 280.2 244.9 296.8 248.6 320.2 266.7 333.6 286.7 357.6 274.2 383.2 261.5 390.3 266.5 426.6 263.2 436.0 252.1 424.6 235.2 422.9 209.9 432.9 178.6 430.5 173.6 445.2 155.7 429.8 145.0 432.8 107.0 415.8 99.8 427.9 69.6 427.5 74.1 387.9 92.0 349.7 41.0 339.5 24.3 324.9 26.3 300.5 19.2 287.9 23.3 250.3 17.3 192.0 38.6 191.9 47.6 171.0 56.4 120.0 49.8 101.2 56.7 89.4 86.3 86.4 92.8 98.7 116.9 71.2 108.8 50.3 107.2 18.8 133.9 26.1 156.6 17.6Z"/>
+            <path class="country" d="M406.5 399.5 403.8 422.3 383.9 422.4 390.7 434.4 379.0 470.3 372.2 479.7 341.3 481.1 323.4 493.7 294.1 489.4 243.5 475.0 235.6 455.6 200.6 465.3 196.5 475.9 175.0 468.0 157.0 466.5 140.9 456.3 146.3 442.7 145.0 432.8 155.7 429.8 173.6 445.2 178.6 430.5 209.9 432.9 235.2 422.9 252.1 424.6 263.2 436.0 266.5 426.6 261.5 390.3 274.2 383.2 286.7 357.6 313.0 375.5 332.9 352.7 345.4 348.5 372.9 365.5 389.5 362.6 405.8 373.2 403.0 380.2 406.5 399.5Z"/>
+            <path class="country" d="M145.0 432.8 146.3 442.7 140.9 456.3 157.0 466.5 175.0 468.0 172.2 490.8 156.6 500.2 130.4 493.2 122.7 515.7 105.9 517.4 99.7 508.6 79.9 527.5 62.8 530.1 47.6 518.2 35.4 493.8 18.5 502.5 19.0 477.3 44.9 446.0 43.8 431.9 59.9 437.0 69.6 427.5 99.8 427.9 107.0 415.8 145.0 432.8Z"/>
+            <g>
+              <circle class="city-ring" cx="159" cy="97.4" r="7" style="animation-delay:0s"/><circle class="city-dot" cx="159" cy="97.4" r="4.5"/><circle class="city-core" cx="159" cy="97.4" r="1.6"/>
+              <circle class="city-ring" cx="279.7" cy="154.8" r="7" style="animation-delay:.5s"/><circle class="city-dot" cx="279.7" cy="154.8" r="4.5"/><circle class="city-core" cx="279.7" cy="154.8" r="1.6"/>
+              <circle class="city-ring" cx="51.7" cy="242.7" r="7" style="animation-delay:1s"/><circle class="city-dot" cx="51.7" cy="242.7" r="4.5"/><circle class="city-core" cx="51.7" cy="242.7" r="1.6"/>
+              <circle class="city-ring" cx="149.8" cy="163.1" r="7" style="animation-delay:1.5s"/><circle class="city-dot" cx="149.8" cy="163.1" r="4.5"/><circle class="city-core" cx="149.8" cy="163.1" r="1.6"/>
+              <circle class="city-ring" cx="112.6" cy="288.9" r="7" style="animation-delay:2s"/><circle class="city-dot" cx="112.6" cy="288.9" r="4.5"/><circle class="city-core" cx="112.6" cy="288.9" r="1.6"/>
+              <circle class="city-ring" cx="130.3" cy="363" r="7" style="animation-delay:.8s"/><circle class="city-dot" cx="130.3" cy="363" r="4.5"/><circle class="city-core" cx="130.3" cy="363" r="1.6"/>
+              <circle class="city-ring" cx="215.3" cy="398.6" r="7" style="animation-delay:1.8s"/><circle class="city-dot" cx="215.3" cy="398.6" r="4.5"/><circle class="city-core" cx="215.3" cy="398.6" r="1.6"/>
+              <circle class="city-ring" cx="291.8" cy="236.6" r="7" style="animation-delay:2.4s"/><circle class="city-dot" cx="291.8" cy="236.6" r="4.5"/><circle class="city-core" cx="291.8" cy="236.6" r="1.6"/>
+              <circle class="city-ring" cx="197.6" cy="325.7" r="7" style="animation-delay:.3s"/><circle class="city-dot" cx="197.6" cy="325.7" r="4.5"/><circle class="city-core" cx="197.6" cy="325.7" r="1.6"/>
+              <circle class="city-ring" cx="384.9" cy="394.7" r="7" style="animation-delay:1.2s"/><circle class="city-dot" cx="384.9" cy="394.7" r="4.5"/><circle class="city-core" cx="384.9" cy="394.7" r="1.6"/>
+              <circle class="city-ring" cx="107.6" cy="441.5" r="7" style="animation-delay:2.1s"/><circle class="city-dot" cx="107.6" cy="441.5" r="4.5"/><circle class="city-core" cx="107.6" cy="441.5" r="1.6"/>
+              <circle class="city-ring" cx="75.4" cy="185.9" r="7" style="animation-delay:1.6s"/><circle class="city-dot" cx="75.4" cy="185.9" r="4.5"/><circle class="city-core" cx="75.4" cy="185.9" r="1.6"/>
+              <circle class="city-ring" cx="352" cy="458.2" r="7" style="animation-delay:2.7s"/><circle class="city-dot" cx="352" cy="458.2" r="4.5"/><circle class="city-core" cx="352" cy="458.2" r="1.6"/>
+              <circle class="city-ring" cx="69.1" cy="464.8" r="7" style="animation-delay:.9s"/><circle class="city-dot" cx="69.1" cy="464.8" r="4.5"/><circle class="city-core" cx="69.1" cy="464.8" r="1.6"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="stimmen" style="padding-top:20px;">
+    <div class="container">
+      <div class="section-label reveal">Wer hinter dem Report steht</div>
+      <h2 class="section-title reveal">Das sagen Arbeitgeber <em class="accent">über die Zusammenarbeit.</em></h2>
+      <p class="section-sub reveal">GreenCareers wertet als spezialisiertes Karrierenetzwerk laufend Recruiting-Daten aus dem Bau-Hauptgewerbe und der grünen Branche aus – daraus entsteht dieser Report.</p>
+      <div class="testi-grid">
+        <div class="testi reveal">
+          <div class="testi-result">20+ Bewerber auf eine Stelle</div>
+          <span class="stars">★★★★★</span>
+          <p>„Nach kurzer Zeit hatte ich mehr als 20 Bewerber auf meine ausgeschriebene Stelle […]. Ich kann GreenCareers jedem Arbeitgeber und Arbeitnehmer nur empfehlen."</p>
+          <div class="testi-foot"><span class="testi-avatar">TK</span><div><div class="testi-name">Tobias Knauf</div><div class="testi-verified">✓ Verifizierte Google-Bewertung</div></div></div>
+        </div>
+        <div class="testi reveal">
+          <div class="testi-result">Offene, wertschätzende Kommunikation</div>
+          <span class="stars">★★★★★</span>
+          <p>„Die Zusammenarbeit mit GreenCareers war insgesamt sehr positiv. Das Team ist freundlich, kompetent und engagiert. Besonders angenehm war die offene und wertschätzende Kommunikation."</p>
+          <div class="testi-foot"><span class="testi-avatar">AH</span><div><div class="testi-name">Alexander Hildebrand</div><div class="testi-verified">✓ Verifizierte Google-Bewertung</div></div></div>
+        </div>
+        <div class="testi reveal">
+          <div class="testi-result">Mehrere Bewerber pro Tag</div>
+          <span class="stars">★★★★★</span>
+          <p>„Unkomplizierte Plattform, bei der es einen guten Rücklauf von mehreren Bewerbern pro Tag gegeben hat. Eine gute, offene Kommunikation erleichtert die Zusammenarbeit!"</p>
+          <div class="testi-foot"><span class="testi-avatar">BD</span><div><div class="testi-name">Boas Diehl</div><div class="testi-verified">✓ Verifizierte Google-Bewertung</div></div></div>
+        </div>
+      </div>
+      <div style="text-align:center;"><span class="google-badge reveal"><span class="gb-item">Google <b>4,9/5</b> <span style="color:#FBBF24;letter-spacing:1px;">★★★★★</span></span><span class="gb-item">500+ Betriebe</span><span class="gb-item">900+ Platzierungen</span></span></div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section id="abschluss" style="padding-top:10px;">
+    <div class="container">
+      <div class="final-cta reveal">
+        <h2>Ihre nächste Einstellung – <span class="ital">planbar statt Zufall.</span></h2>
+        <p>Holen Sie sich die Benchmarks, Vollkosten-Rechnungen und Vorlagen, mit denen Straßen- und Tiefbau-Betriebe ihre Stellen in unter 90&nbsp;Tagen besetzen.</p>
+        <a class="btn-primary" href="#quiz" data-scroll-quiz>Gratis-Report sichern →</a>
+        <div class="final-note">32&nbsp;Seiten · PDF · Sofort-Zugriff · Keine Verpflichtung</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="container">
+      <div class="footer-row">
+        <span>© 2026 GreenCareers – Die Karriereplattform für das Bau-Hauptgewerbe.</span>
+        <div class="footer-links">
+          <a href="https://www.green-careers.de/datenschutz" target="_blank" rel="noopener">Datenschutz</a>
+          <a href="https://www.green-careers.de/impressum" target="_blank" rel="noopener">Impressum</a>
+          <a href="https://www.green-careers.de/agb" target="_blank" rel="noopener">AGB</a>
+        </div>
+      </div>
+      <p class="footer-note">Kennzahlen basieren auf öffentlich verfügbaren Statistiken (Bundesagentur für Arbeit, StepStone, Destatis, Hauptverband Deutsche Bauindustrie, KfW, ZDB) sowie eigenen Auswertungen. Made with ♥ in Germany für den Bau.</p>
+    </div>
+  </footer>
+
+  <!-- ===== STICKY CTA (mobile) ===== -->
+  <div class="sticky-cta" id="sticky-cta"><a href="#quiz" data-scroll-quiz id="sticky-cta-link">Gratis-Report ansehen →</a></div>
+
+  <script>
+  (function(){
+    'use strict';
+
+    /* =====================================================
+       KONFIGURATION
+       ===================================================== */
+    var LANDINGPAGE_ID = 'recruiting-report-2026-tiefbau-v2';
+    var MAKE_WEBHOOK_URL = 'https://hook.eu1.make.com/qyb92nl2xkkljit85gdncevg3c5dttf8';
+    var FUNNEL_EVENT_ENDPOINT = 'https://gc-tracking-dashboard.vercel.app/api/recruiting/funnel-event';
+    var LEAD_EVENT_ENDPOINT = 'https://gc-tracking-dashboard.vercel.app/api/tracking/lead-event';
+    var META_PIXEL_ID = '634469765867935';
+    var CLARITY_PROJECT_ID = ''; // Microsoft-Clarity-Projekt-ID eintragen → Heatmaps/Recordings aktiv
+
+    // Live nur auf *.green-careers.de — auf der Vercel-Test-URL werden
+    // weder Pixel noch Webhook noch Tracking-Endpoints angesprochen.
+    var IS_LIVE = /(^|\.)green-careers\.de$/.test(location.hostname);
+
+    /* =====================================================
+       PIXEL + CLARITY (nur live)
+       ===================================================== */
+    if (IS_LIVE) {
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+      n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+      document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', META_PIXEL_ID);
+      fbq('track', 'PageView');
+      if (CLARITY_PROJECT_ID) {
+        (function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+      }
+    } else {
+      console.info('[GC Preview] Test-Modus: Tracking, Pixel und Webhook sind deaktiviert (Hostname ist nicht green-careers.de).');
+    }
+
+    /* =====================================================
+       HELPERS
+       ===================================================== */
+    function uuidv4(){
+      if (window.crypto && crypto.randomUUID) return crypto.randomUUID();
+      return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g,function(c){
+        var r=Math.random()*16|0,v=c==='x'?r:(r&3|8);return v.toString(16);});
+    }
+    var sessionId = (function(){
+      try {
+        var s = sessionStorage.getItem('gc_session_id');
+        if (!s) { s = uuidv4(); sessionStorage.setItem('gc_session_id', s); }
+        return s;
+      } catch(e){ return uuidv4(); }
+    })();
+
+    var trackingParams = (function(){
+      var out = {};
+      try {
+        var p = new URLSearchParams(location.search);
+        ['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','gclid'].forEach(function(k){
+          var v = p.get(k);
+          if (v) out[k] = v;
+        });
+      } catch(e){}
+      return out;
+    })();
+
+    function getCookie(name){
+      try {
+        var m = document.cookie.match('(^|;)\\s*' + name + '\\s*=\\s*([^;]+)');
+        return m ? decodeURIComponent(m.pop()) : '';
+      } catch(e){ return ''; }
+    }
+    function getFbp(){ return getCookie('_fbp'); }
+    function getFbc(){
+      var c = getCookie('_fbc');
+      if (c) return c;
+      if (trackingParams.fbclid) return 'fb.1.' + Date.now() + '.' + trackingParams.fbclid;
+      return '';
+    }
+
+    // Stabile event_id pro Stufe + Session (übersteht Reload → Meta dedupliziert)
+    function getEventId(stage){
+      var key = 'gc_eid_' + stage + '_' + LANDINGPAGE_ID;
+      try {
+        var id = localStorage.getItem(key);
+        if (!id) { id = uuidv4(); localStorage.setItem(key, id); }
+        return id;
+      } catch(e){ return uuidv4(); }
+    }
+
+    /* =====================================================
+       TRACKING (identischer Vertrag wie recruiting-report-2026)
+       ===================================================== */
+    function trackFunnelEvent(eventType, slideId){
+      var body = Object.assign({
+        event_type: eventType,
+        slide_id: slideId,
+        landingpage_id: LANDINGPAGE_ID,
+        session_id: sessionId,
+        referrer: document.referrer || '',
+        page_url: location.href,
+        user_agent: navigator.userAgent
+      }, trackingParams);
+      if (!IS_LIVE) { console.info('[GC Preview] funnel-event:', eventType, slideId || ''); return; }
+      try {
+        fetch(FUNNEL_EVENT_ENDPOINT, {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(body), keepalive:true, credentials:'omit'
+        }).catch(function(){});
+      } catch(e){}
+    }
+
+    function trackPixelEvent(name, params){
+      if (!IS_LIVE) { console.info('[GC Preview] pixel:', name, params || {}); return; }
+      try { if (typeof fbq === 'function') fbq('trackCustom', name, params || {}); } catch(e){}
+    }
+
+    function sendLeadStageEvent(stage, eventId){
+      var body = Object.assign({
+        stage: stage,
+        event_id: eventId,
+        landingpage_id: LANDINGPAGE_ID,
+        session_id: sessionId,
+        email: answers.email,
+        vorname: answers.vorname || '',
+        nachname: answers.nachname || '',
+        unternehmen: answers.unternehmen || '',
+        phone: answers.phone || '',
+        rolle: answers.rolle || '',
+        fbp: getFbp(),
+        fbc: getFbc(),
+        page_url: location.href,
+        referrer: document.referrer || '',
+        user_agent: navigator.userAgent
+      }, trackingParams);
+      try {
+        var p = new URLSearchParams(location.search);
+        if (p.get('tracking_debug') === '1') body.dry_run = true;
+        if (p.get('test_capi')) body.test_event_code = p.get('test_capi');
+      } catch(e){}
+      if (!IS_LIVE) { console.info('[GC Preview] lead-event:', stage, body); return; }
+      try {
+        fetch(LEAD_EVENT_ENDPOINT, {
+          method:'POST', headers:{'Content-Type':'application/json'},
+          body: JSON.stringify(body), keepalive:true, credentials:'omit'
+        }).catch(function(){});
+      } catch(e){}
+    }
+
+    /* =====================================================
+       QUIZ
+       ===================================================== */
+    var answers = { rolle:'', email:'', vorname:'', nachname:'', unternehmen:'', phone:'' };
+    var slides = Array.prototype.slice.call(document.querySelectorAll('.quiz-slide'));
+    var progress = document.getElementById('quiz-progress');
+    var progressFill = document.getElementById('quiz-progress-fill');
+    var progressLabel = document.getElementById('quiz-progress-label');
+    var progressTime = document.getElementById('quiz-progress-time');
+    var quizCard = document.getElementById('quiz');
+    var quizStarted = false;
+    var TOTAL_STEPS = 4;
+    var TIME_LEFT = {1:'≈ 45\u00A0Sek.',2:'≈ 30\u00A0Sek.',3:'≈ 20\u00A0Sek.',4:'≈ 10\u00A0Sek.'};
+
+    function showSlide(n){
+      if (n === 3 && answers.vorname) {
+        document.getElementById('quiz-kicker-greeting').textContent =
+          'Schön, Sie kennenzulernen, ' + answers.vorname + ' ' + answers.nachname + '!';
+      }
+      slides.forEach(function(s){ s.classList.toggle('is-active', s.dataset.slide === String(n)); });
+      quizCard.classList.toggle('quiz-started', n > 1);
+      if (n > 1) {
+        progress.classList.add('visible');
+        progressLabel.textContent = 'Schritt ' + n + ' von ' + TOTAL_STEPS;
+        progressTime.textContent = TIME_LEFT[n] + ' übrig';
+        progressFill.style.width = (n/TOTAL_STEPS*100) + '%';
+      } else {
+        progress.classList.remove('visible');
+      }
+      trackFunnelEvent('slide_view', String(n));
+      trackPixelEvent('Quiz_Step_' + n + '_Viewed', { landingpage: LANDINGPAGE_ID });
+      var firstInput = slides[n-1] && slides[n-1].querySelector('.quiz-input');
+      if (firstInput) setTimeout(function(){ firstInput.focus({ preventScroll:true }); }, 250);
+      if (quizCard.getBoundingClientRect().top < 0) quizCard.scrollIntoView({ behavior:'smooth', block:'start' });
+    }
+
+    // LP-View + Step 1 sichtbar (Parität zur alten Zählung)
+    trackFunnelEvent('lp_view', null);
+    trackFunnelEvent('slide_view', '1');
+    trackPixelEvent('Quiz_Step_1_Viewed', { landingpage: LANDINGPAGE_ID });
+
+    // Rollen-Kacheln (Step 1 — einzige Quiz-Frage)
+    document.querySelectorAll('.quiz-tile').forEach(function(btn){
+      btn.addEventListener('click', function(){
+        answers.rolle = btn.dataset.value;
+        if (!quizStarted) {
+          quizStarted = true;
+          trackPixelEvent('Quiz_Started', { landingpage: LANDINGPAGE_ID, cta_location: 'quiz_tile_rolle' });
+        }
+        mountContactFields();
+        setTimeout(function(){ showSlide(2); }, 180);
+      });
+    });
+
+    /* =====================================================
+       DATEN-SLIDES: erst bei Quiz-Start ins DOM
+       (Meta-In-App-Browser scannt beim Laden nach Kontakt-
+       formularen und scrollt sonst automatisch zum Quiz)
+       ===================================================== */
+    var fieldsMounted = false;
+    var fullnameInput, firmaInput, emailInput, phoneInput, privacyCheck;
+    var step2CTA, step2Error, step3CTA, step3Error, finalSubmit, step4Error;
+
+    function evaluateFinalEnabled(){
+      var digits = phoneInput.value.replace(/\D/g,'');
+      finalSubmit.disabled = !(digits.length >= 6 && privacyCheck.checked);
+    }
+
+    function mountContactFields(){
+      if (fieldsMounted) return;
+      fieldsMounted = true;
+      var leadForm = document.getElementById('lead-form');
+      leadForm.appendChild(document.getElementById('tpl-slides-234').content.cloneNode(true));
+      Array.prototype.slice.call(leadForm.querySelectorAll('.quiz-slide')).forEach(function(s){
+        if (slides.indexOf(s) === -1) slides.push(s);
+      });
+
+      fullnameInput = document.getElementById('fullname');
+      firmaInput = document.getElementById('unternehmen');
+      emailInput = document.getElementById('email');
+      phoneInput = document.getElementById('phone');
+      privacyCheck = document.getElementById('privacy');
+      step2CTA = document.getElementById('quiz-step2-cta');
+      step2Error = document.getElementById('quiz-step2-error');
+      step3CTA = document.getElementById('quiz-step3-cta');
+      step3Error = document.getElementById('quiz-step3-error');
+      finalSubmit = document.getElementById('quiz-final-submit');
+      step4Error = document.getElementById('quiz-step4-error');
+
+      // Zurück-Buttons (liegen in den gemounteten Slides)
+      leadForm.querySelectorAll('.quiz-back').forEach(function(btn){
+        btn.addEventListener('click', function(){ showSlide(parseInt(btn.dataset.back, 10)); });
+      });
+
+      firmaInput.addEventListener('keydown', function(e){ if (e.key === 'Enter'){ e.preventDefault(); step2CTA.click(); } });
+      emailInput.addEventListener('keydown', function(e){ if (e.key === 'Enter'){ e.preventDefault(); step3CTA.click(); } });
+      phoneInput.addEventListener('input', evaluateFinalEnabled);
+      privacyCheck.addEventListener('change', evaluateFinalEnabled);
+      [emailInput, fullnameInput, firmaInput, phoneInput].forEach(function(el){
+        el.addEventListener('input', function(){ el.classList.remove('is-error'); });
+      });
+
+      // STEP 2 — Name + Firma (vor E-Mail: niederschwelliger Einstieg, personalisiert den E-Mail-Step)
+      step2CTA.addEventListener('click', function(){
+        var parts = fullnameInput.value.trim().split(/\s+/).filter(Boolean);
+        var firma = firmaInput.value.trim();
+        if (parts.length < 2 || firma.length < 2) {
+          if (parts.length < 2) fullnameInput.classList.add('is-error');
+          if (firma.length < 2) firmaInput.classList.add('is-error');
+          step2Error.classList.add('active');
+          return;
+        }
+        step2Error.classList.remove('active');
+        answers.vorname = parts[0];
+        answers.nachname = parts.slice(1).join(' ');
+        answers.unternehmen = firma;
+        showSlide(3);
+      });
+
+      // STEP 3 — E-Mail → Lead-Stufe
+      step3CTA.addEventListener('click', function(){
+        var email = emailInput.value.trim();
+        var valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+        if (!valid) { emailInput.classList.add('is-error'); step3Error.classList.add('active'); return; }
+        emailInput.classList.remove('is-error'); step3Error.classList.remove('active');
+        answers.email = email;
+        // Stufe 1 "Lead": E-Mail liegt vor → Pixel + CAPI (gemeinsame event_id),
+        // Lead landet in Supabase (lead_stage=email_only) → Abandoned-Cron/Slack.
+        // Name + Firma sind hier bereits erfasst und gehen im Payload mit.
+        if (!window.__gcLeadFired) {
+          window.__gcLeadFired = true;
+          var leadEventId = getEventId('lead');
+          if (IS_LIVE) {
+            try {
+              if (typeof fbq === 'function') {
+                fbq('track', 'Lead', { content_name:'Recruiting-Report E-Mail erhalten', landingpage: LANDINGPAGE_ID }, { eventID: leadEventId });
+              }
+            } catch(e){}
+          } else {
+            console.info('[GC Preview] pixel: Lead (eventID ' + leadEventId + ')');
+          }
+          sendLeadStageEvent('lead', leadEventId);
+        }
+        showSlide(4);
+      });
+
+      // STEP 4 — Telefon + Datenschutz → Submit
+      finalSubmit.addEventListener('click', onFinalSubmit);
+    }
+
+    function onFinalSubmit(){
+      var digits = phoneInput.value.replace(/\D/g,'');
+      if (digits.length < 6 || !privacyCheck.checked) { step4Error.classList.add('active'); return; }
+      step4Error.classList.remove('active');
+      var cc = document.getElementById('phone-country').value || '49';
+      if (digits.startsWith('00')) digits = digits.slice(2);
+      else if (digits.startsWith('0')) digits = cc + digits.slice(1);
+      else if (!digits.startsWith(cc)) digits = cc + digits;
+      answers.phone = '+' + digits;
+
+      var originalText = finalSubmit.textContent;
+      finalSubmit.textContent = 'Wird gesendet…';
+      finalSubmit.disabled = true;
+
+      var payload = Object.assign({
+        vorname: answers.vorname,
+        nachname: answers.nachname,
+        unternehmen: answers.unternehmen,
+        email: answers.email,
+        phone: answers.phone,
+        rolle: answers.rolle,
+        source: LANDINGPAGE_ID,
+        landingpage_id: LANDINGPAGE_ID,
+        session_id: sessionId,
+        timestamp: new Date().toISOString(),
+        page_url: location.href,
+        referrer: document.referrer || '',
+        user_agent: navigator.userAgent
+      }, trackingParams);
+
+      var send;
+      if (IS_LIVE) {
+        send = fetch(MAKE_WEBHOOK_URL, {
+          method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify(payload)
+        }).then(function(r){ if (!r.ok) throw new Error('Webhook returned ' + r.status); });
+      } else {
+        console.info('[GC Preview] Make-Webhook (nicht gesendet):', payload);
+        send = new Promise(function(r){ setTimeout(r, 700); });
+      }
+
+      send.then(function(){
+        trackFunnelEvent('submit_success', null);
+        // Stufe 2 "CompleteRegistration": Formular vollständig
+        var crEventId = getEventId('complete_registration');
+        if (IS_LIVE) {
+          try {
+            if (typeof fbq === 'function') {
+              fbq('track', 'CompleteRegistration', { content_name:'Recruiting-Report angefordert', landingpage: LANDINGPAGE_ID }, { eventID: crEventId });
+            }
+          } catch(e){}
+        } else {
+          console.info('[GC Preview] pixel: CompleteRegistration (eventID ' + crEventId + ')');
+        }
+        sendLeadStageEvent('complete_registration', crEventId);
+        try {
+          localStorage.setItem('gc_lead_data', JSON.stringify({
+            vorname: answers.vorname, nachname: answers.nachname,
+            unternehmen: answers.unternehmen, email: answers.email, phone: answers.phone
+          }));
+        } catch(e){}
+        document.getElementById('lead-form').style.display = 'none';
+        progress.style.display = 'none';
+        document.getElementById('form-success').classList.add('active');
+        document.getElementById('sticky-cta').classList.remove('visible');
+        window.__gcSubmitted = true;
+        quizCard.scrollIntoView({ behavior:'smooth', block:'center' });
+      }).catch(function(err){
+        console.error('Form submit error:', err);
+        trackFunnelEvent('submit_failed', null);
+        step4Error.textContent = 'Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut.';
+        step4Error.classList.add('active');
+        finalSubmit.textContent = originalText;
+        finalSubmit.disabled = false;
+      });
+    }
+
+    // Report öffnen (Success)
+    document.getElementById('report-open').addEventListener('click', function(){
+      trackPixelEvent('Report_Opened', { landingpage: LANDINGPAGE_ID });
+    });
+
+    /* =====================================================
+       UI: Scroll-zu-Quiz-CTAs, Sticky-CTA, Reveal, Marquee
+       ===================================================== */
+    document.querySelectorAll('[data-scroll-quiz]').forEach(function(el){
+      el.addEventListener('click', function(e){
+        e.preventDefault();
+        trackPixelEvent(el.id === 'sticky-cta-link' ? 'Sticky_CTA_Clicked' : 'Quiz_Started', { landingpage: LANDINGPAGE_ID, cta_location: el.id || 'cta' });
+        quizCard.scrollIntoView({ behavior:'smooth', block:'start' });
+      });
+    });
+
+    var stickyCta = document.getElementById('sticky-cta');
+    var heroSection = document.getElementById('top');
+    function updateStickyCta(){
+      if (window.__gcSubmitted) { stickyCta.classList.remove('visible'); return; }
+      var heroBottom = heroSection.getBoundingClientRect().bottom;
+      var quizRect = quizCard.getBoundingClientRect();
+      var quizVisible = quizRect.top < window.innerHeight * .75 && quizRect.bottom > 100;
+      stickyCta.classList.toggle('visible', heroBottom < 0 && !quizVisible);
+    }
+    window.addEventListener('scroll', updateStickyCta, { passive:true });
+    updateStickyCta();
+
+    // Scroll-Depth (einmalig je Marke)
+    var depthFired = {};
+    window.addEventListener('scroll', function(){
+      var pct = Math.round((window.scrollY + window.innerHeight) / document.documentElement.scrollHeight * 100);
+      [50, 90].forEach(function(mark){
+        if (pct >= mark && !depthFired[mark]) {
+          depthFired[mark] = true;
+          trackPixelEvent('Scroll_' + mark, { landingpage: LANDINGPAGE_ID });
+        }
+      });
+    }, { passive:true });
+
+    // Reveal-Animationen (IO + Scroll-Fallback, damit Anchor-Sprünge nichts überspringen)
+    var pending = Array.prototype.slice.call(document.querySelectorAll('.reveal'));
+    function revealEl(el){
+      el.classList.add('in');
+      var i = pending.indexOf(el);
+      if (i > -1) pending.splice(i, 1);
+    }
+    if ('IntersectionObserver' in window) {
+      var io = new IntersectionObserver(function(entries){
+        entries.forEach(function(en){
+          if (en.isIntersecting) { revealEl(en.target); io.unobserve(en.target); }
+        });
+      }, { threshold:.12, rootMargin:'0px 0px -40px 0px' });
+      pending.forEach(function(el){ io.observe(el); });
+      window.addEventListener('scroll', function(){
+        if (!pending.length) return;
+        pending.slice().forEach(function(el){
+          if (el.getBoundingClientRect().top < window.innerHeight + 60) { revealEl(el); io.unobserve(el); }
+        });
+      }, { passive:true });
+    } else {
+      pending.slice().forEach(revealEl);
+    }
+
+    // Marquee: Inhalt duplizieren für nahtlosen Loop
+    var track = document.getElementById('marquee-track');
+    track.innerHTML += track.innerHTML;
+
+    /* =====================================================
+       NETZWERK-MAP: Live-Feed (Chips ortskorrekt am Punkt)
+       ===================================================== */
+    (function(){
+      var mapEl = document.querySelector('.network-map');
+      if (!mapEl) return;
+      var VW = 460, VH = 540;
+      // x/y in SVG-Koordinaten der jeweiligen Stadt
+      var FEED = [
+        { x:159,   y:97.4,  t:'Neuer Bewerber', s:'Landschaftsgärtner · Raum Hamburg' },
+        { x:130.3, y:363,   t:'Neuer Bewerber', s:'Landschaftsgärtner · Raum Stuttgart' },
+        { x:279.7, y:154.8, t:'Neuer Bewerber', s:'Vorarbeiter · Raum Berlin' },
+        { x:215.3, y:398.6, t:'Einstellung',    s:'Vorarbeiter · Raum München' },
+        { x:51.7,  y:242.7, t:'Wechselbereit',  s:'Bauleiter · Raum Köln' },
+        { x:291.8, y:236.6, t:'Neuer Bewerber', s:'Vorarbeiter · Raum Dresden' },
+        { x:149.8, y:163.1, t:'Wechselbereit',  s:'Landschaftsgärtner · Raum Hannover' },
+        { x:197.6, y:325.7, t:'Neuer Bewerber', s:'Bauleiter · Raum Nürnberg' },
+        { x:75.4,  y:185.9, t:'Einstellung',    s:'Landschaftsgärtner · Raum Münster' },
+        { x:112.6, y:288.9, t:'Neuer Bewerber', s:'Facharbeiter · Raum Frankfurt' },
+        { x:384.9, y:394.7, t:'Neuer Bewerber', s:'Landschaftsgärtner · Raum Wien' },
+        { x:107.6, y:441.5, t:'Wechselbereit',  s:'Vorarbeiter · Raum Zürich' }
+      ];
+      function makeChip(item){
+        var chip = document.createElement('div');
+        chip.className = 'map-chip';
+        var xPct = Math.min(Math.max(item.x / VW * 100, 24), 76);
+        chip.style.left = xPct + '%';
+        chip.style.top = (item.y / VH * 100) + '%';
+        chip.innerHTML = '<span class="cd"></span><span><b>' + item.t + '</b>' + item.s + '</span>';
+        var ping = document.createElement('div');
+        ping.className = 'map-ping';
+        ping.style.left = (item.x / VW * 100) + '%';
+        ping.style.top = (item.y / VH * 100) + '%';
+        return { chip: chip, ping: ping };
+      }
+      var reduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (reduced) {
+        [FEED[0], FEED[1], FEED[10]].forEach(function(item){
+          var el = makeChip(item);
+          el.chip.classList.add('on');
+          mapEl.appendChild(el.chip);
+        });
+        return;
+      }
+      var order = FEED.slice(), idx = 0;
+      function shuffle(a){ for (var i = a.length - 1; i > 0; i--){ var j = Math.floor(Math.random() * (i + 1)); var t = a[i]; a[i] = a[j]; a[j] = t; } }
+      shuffle(order);
+      function next(){
+        var item = order[idx];
+        idx = (idx + 1) % order.length;
+        if (idx === 0) shuffle(order);
+        var el = makeChip(item);
+        mapEl.appendChild(el.chip);
+        mapEl.appendChild(el.ping);
+        requestAnimationFrame(function(){ requestAnimationFrame(function(){
+          el.chip.classList.add('on');
+          el.ping.classList.add('on');
+        }); });
+        setTimeout(function(){
+          el.chip.classList.remove('on');
+          setTimeout(function(){ el.chip.remove(); el.ping.remove(); }, 350);
+        }, 3000);
+        setTimeout(next, 2000 + Math.random() * 2000);
+      }
+      setTimeout(next, 900);
+    })();
+  })();
+  </script>
+</body>
+</html>
