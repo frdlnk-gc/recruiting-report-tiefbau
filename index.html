@@ -1203,7 +1203,7 @@
 
     // Marquee: Inhalt duplizieren für nahtlosen Loop
     var track = document.getElementById('marquee-track');
-    track.innerHTML += track.innerHTML;
+    if (track) {    track.innerHTML += track.innerHTML; }
 
     /* =====================================================
        NETZWERK-MAP: Live-Feed (Chips ortskorrekt am Punkt)
